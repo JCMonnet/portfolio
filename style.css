@@ -1,0 +1,83 @@
+* {
+    font-family: arial;
+}
+
+header {
+    height: 300px;
+    background: url("image/header.png");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    justify-content: space-around;
+
+}
+
+#navapart {
+    color: orange;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#un:hover {
+    cursor: pointer;
+    text-decoration: overline;
+    color: white;
+}
+
+#deux:hover {
+    cursor: pointer;
+    text-decoration: overline;
+    color: white;
+}
+
+#trois:hover {
+    cursor: pointer;
+    text-decoration: overline;
+    color: white;
+}
+
+
+#nom {
+    display: flex;
+    justify-content: space-around;
+}
+#nom:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#titre {
+    display: flex;
+    justify-content: center;
+}
+#titre:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+
+#moi {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+#moi:hover {
+    -webkit-transition: -webkit-transform .9s;
+    -moz-transition: -moz-transform .9s;
+    -o-transition: -o-transform .9s;
+    -ms-transition: -ms-transform .9s;
+    transition: transform .9s;
+    cursor: pointer;
+}
+
+#moi:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
