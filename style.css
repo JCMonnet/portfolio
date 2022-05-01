@@ -155,7 +155,36 @@ h2 {
     border-radius: 0% 20%;
 }
 
+/* animation première image */
 #skew:hover {
     transform: skew(30deg, 20deg);
 }
 
+/* code couleur texte et background */
+#contact {
+    background-color: black;
+    border-top: grey solid 5px;
+}
+#nom1 {
+    color: white;
+}
+
+#prenom1 {
+    color: white;
+}
+#mess1 {
+    color: white;
+}
+
+/* mise en flex pour centrage */
+table {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    height: 30px;
+}
