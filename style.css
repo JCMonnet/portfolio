@@ -1,7 +1,9 @@
 * {
     font-family: arial;
+    margin: 0;
 }
 
+/* code couleur et taille police et mise en flex pour gestion du placement des élements */
 header {
     height: 300px;
     background: url("image/header.png");
@@ -13,13 +15,25 @@ header {
 
 }
 
+/* mis une id pour gérer la mise in-line de ce bloc */
 #navapart {
-    color: orange;
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
+a {
+    color: orange;
+}
+
+#moi {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: dashed white 1px;
+}
+
+/* "bloc" regroupant tous les effets au hover */
 #un:hover {
     cursor: pointer;
     text-decoration: overline;
@@ -42,7 +56,9 @@ header {
 #nom {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
 #nom:hover {
     cursor: pointer;
     color: orange;
@@ -52,19 +68,16 @@ header {
     display: flex;
     justify-content: center;
 }
+
 #titre:hover {
     cursor: pointer;
     color: orange;
 }
 
 
-#moi {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
 
-}
 
+/* utilisation d'un webkit pour rotation photo et compatible differents navigateurs */
 #moi:hover {
     -webkit-transition: -webkit-transform .9s;
     -moz-transition: -moz-transform .9s;
@@ -81,3 +94,68 @@ header {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+/* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background */
+#edito {
+    background-color: black;
+    border-top: grey solid 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    color: orange;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#edito p {
+    width: 75%;
+    margin-top: 10%;
+    color: white;
+}
+
+
+/* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
+#projet {
+    background-color: black;
+    border-top: grey solid 5px;
+}
+
+/* création d'une div et mise en flex pour organiser la mise en forme des images et des textes */
+#projet div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
+#projet p {
+    color: white;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+#projet img {
+    width: 40%;
+    height: 100px;
+    margin-bottom: 5%;
+}
+
+/* création classe pour l'effet radius inversé 1 image sur 2 */
+.radius1 {
+    border: solid white 1px;
+    border-radius: 20% 0%;
+}
+
+.radius2 {
+    border: solid orange 1px;
+    border-radius: 0% 20%;
+}
+
+#skew:hover {
+    transform: skew(30deg, 20deg);
+}
+

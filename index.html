@@ -13,23 +13,74 @@
 </head>
 
 <body>
+    <!-- header découpé avec : bloc nav pour gestion en ligne. D'une div avec texte et photo pour pouvoir aligner les 2.
+    Et une div avec juste "en formation...." pour pour pouvoir la centrer seule, pour obtenir le texte arrivant un peu sous
+la photo. -->
     <header>
         <nav>
             <ul id="navapart">
-                <li id="un">edito</li>
-                <li id="deux">projets</li>
-                <li id="trois">contact</li>
+                <li id="un"><a href="#edito">edito</a></li>
+                <li id="deux"><a href="#projet">projets</a></li>
+                <li id="trois"><a href="#contact">contact</a></li>
             </ul>
-        </nav> 
-            <div id="nom"><p>Jean-Charles Monnet</p>
-                <img id="moi" src="image/jc.jpg" alt="ma photo de profil">
-                </div>
-            <div id="titre">En formation <br> developpeur web</div>
-
-
-<section id="edito"></section>
-        
+        </nav>
+        <div id="nom">
+            <p>Jean-Charles Monnet</p>
+            <img id="moi" src="image/portrait.jpg" alt="ma photo de profil">
+        </div>
+        <div id="titre">En formation developpeur web</div>
     </header>
+
+    <!-- création de la section edito, en y incluant le h2 et le p. En prévision d'une mise en flex.
+        Pour obtenir la mise en forme du paragraphe, comme sur la maquette -->
+    <section id="edito">
+        <h2>Edito :</h2>
+        <p>Hello world, je m'appelle donc
+            Jean-Charles ou JC pour ceux qui préferent. Après plus de vingt ans passés
+            dans le domaine des essais automobiles.
+            Où j'ai eu l'occasion d'encadrer des "conducteurs essayeurs", et où j'étais chargé de veiller à
+            l'application de procédures techniques et
+            sécurité. Je devais faire le lien entre la demande client et les équipes. Le secteur a été touché par la
+            crise covid et les changements venus
+            avec les vehicules électriques. Résultat la société a été liquidée et moi licencié. Depuis un certain temps
+            je m'interessais au secteur du numérique
+            et du web, mais sans jamais avoir le temps de m'y lancer. Du coup, je tente de transformer ce qui m'arrive,
+            en opportunité de reconversion.
+            J'ai donc commencé cette formation de developpeur web, en espérant qu'elle me permette d'intégrer ce secteur
+            plein de promesses.
+            Je commence par les bases bien sûr: Html, css, js. J'apprends aussi surtout à me documenter, à rechercher
+            les solutions dont j'ai besoin.
+            Car j'aime la part d'autonomie et d'autogestion que cette activité exige.
+        </p>
+    </section>
+
+    <!-- section créée pour ancre nav -->
+    <section id="projet">
+        <h2>Projets :</h2>
+        <!-- création div en prévision du flex en css -->
+        <div>
+            <img class="radius1" id="skew" src="image/codehtml.jpg" alt="exemple de code">
+            <p>J'ai appris la structuure d'une page html de base. Ainsi que les principales balises sémantiques</p>
+
+            <p>Connaissance des balises courantes. Utilisation de flex-box et des selecteurs. Et d'animations simples.
+            </p>
+            <img class="radius2" src="image/css.png" alt="logo css">
+
+
+            <img class="radius1" src="image/js.jpg" alt="logo javascript">
+            <p>Connaissance des élements du dom. Déclaration de variables. Ajout d'eventlistener. Et fonctions simples
+            </p>
+
+            <p>Réalisation de mon cv en ligne et responsive</p>
+            <img class="radius2" src="image/cv.PNG" alt="capture d'ecran de mon cv">
+
+            <img class="radius1"  src="image/hulu.png" alt="image du site cloné">
+            <p>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
+            </p>
+        </div>
+    </section>
+
+
 
 </body>
 
