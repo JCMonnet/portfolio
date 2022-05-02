@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     <title>Mon Portfolio</title>
+    <meta
+        description="Voici mon portfolio. Vous souhaitez savoir qui je suis? Vous souhaitez connaitre mes projets? Consultez le.">
 </head>
 
 <body>
@@ -25,9 +27,9 @@ la photo. -->
                 <li id="trois"><a href="#contact">contact</a></li>
             </ul>
         </nav>
-        <div id="nom">
+        <div id="identite">
             <p>Jean-Charles Monnet</p>
-            <img id="moi" src="image/portrait.jpg" alt="ma photo de profil">
+            <img id="moi" src="image/portrait.WebP" alt="ma photo de profil">
         </div>
         <div id="titre">En formation developpeur web</div>
     </header>
@@ -36,7 +38,7 @@ la photo. -->
         Pour obtenir la mise en forme du paragraphe, comme sur la maquette -->
     <section id="edito">
         <h2>Edito :</h2>
-        <p>Hello world, je m'appelle donc
+        <p> Hello world, je m'appelle donc
             Jean-Charles ou JC pour ceux qui préferent. Après plus de vingt ans passés
             dans le domaine des essais automobiles.
             Où j'ai eu l'occasion d'encadrer des "conducteurs essayeurs", et où j'étais chargé de veiller à
@@ -58,32 +60,36 @@ la photo. -->
     <!-- section créée pour ancre nav -->
     <section id="projet">
         <h2>Projets :</h2>
-        <!-- création div en prévision du flex en css -->
-        <div>
-            <img class="radius1" id="skew" src="image/codehtml.jpg" alt="exemple de code">
-            <p>J'ai appris la structuure d'une page html de base. Ainsi que les principales balises sémantiques</p>
-
+        <!-- création div pas nécessaires pour le flexbox. Mais en prévision des effets sur images -->
+        <div id="projet1">
+            <img class="radius1" id="skew" src="image/codehtml.WebP" alt="exemple de code">
+            <p>J'ai appris la structure d'une page html de base. Ainsi que les principales balises sémantiques</p>
+        </div>
+        <div id="projet2">
             <p>Connaissance des balises courantes. Utilisation de flex-box et des selecteurs. Et d'animations simples.
             </p>
-            <img class="radius2" src="image/css.png" alt="logo css">
-
-
-            <img class="radius1" src="image/js.jpg" alt="logo javascript">
+            <img class="radius2"  id="imgprojet2" src="image/flexbox.WebP" alt="logo css">
+        </div>
+        <div id="projet3">
+            <img class="radius1" src="image/js.WebP" alt="logo javascript">
             <p>Connaissance des élements du dom. Déclaration de variables. Ajout d'eventlistener. Et fonctions simples
             </p>
-
+        </div>
+        <div id="projet4">
             <p>Réalisation de mon cv en ligne et responsive</p>
-            <img class="radius2" src="image/cv.PNG" alt="capture d'ecran de mon cv">
-
-            <img class="radius1" src="image/hulu.png" alt="image du site cloné">
-
+            <img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv">
+        </div>
+        <div id="projet5">
+            <img class="radius1" src="image/hulu.WebP" alt="image du site cloné">
             <p>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
             </p>
         </div>
     </section>
 
+    <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="contact">
         <h2>contact :</h2>
+        <!-- création tableau pour faciliter la mise en forme -->
         <table>
             <tr>
                 <td id="prenom1">
@@ -107,7 +113,7 @@ la photo. -->
                 </td>
             </tr>
             <tr>
-                <td id="mess1"><label for=Votre message>Votre message</label>
+                <td id="mess1"><label>Votre message</label>
                 </td>
             </tr>
             <tr>
@@ -118,6 +124,7 @@ la photo. -->
         </table>
         <div id="btn"><input id="bouton" type="submit" value="valider"></div>
     </section>
+
     <footer>
         <i id="reseau1" class="fa-brands fa-facebook fa-4x"></i>
         <i id="reseau2" class="fa-brands fa-twitter fa-4x"></i>
