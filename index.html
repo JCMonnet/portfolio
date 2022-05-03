@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <title>Mon Portfolio</title>
-    <meta
-        description="Voici mon portfolio. Vous souhaitez savoir qui je suis? Vous souhaitez connaitre mes projets? Consultez le.">
+    <!-- <meta
+        content= name "portfolio" "Voici mon portfolio. Vous souhaitez savoir qui je suis? Vous souhaitez connaitre mes projets? Consultez le."> -->
 </head>
 
 <body>
@@ -26,13 +26,14 @@ la photo. -->
     <header>
         <nav>
             <ul id="navapart">
-                <li id="un"><a href="#edito">edito</a></li>
-                <li id="deux"><a href="#projet">projets</a></li>
-                <li id="trois"><a href="#contact">contact</a></li>
+                <li><a href="#edito">edito</a></li>
+                <li><a href="#projet">projets</a></li>
+                <li><a href="#passion">passion</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <div id="identite">
-            <p>Jean-Charles Monnet</p>
+            <p>Jean-Charles  Monnet</p>
             <img id="moi" src="image/portrait.WebP" alt="ma photo de profil">
         </div>
         <div id="titre">En formation developpeur web</div>
@@ -81,6 +82,7 @@ la photo. -->
         </article>
         <article id="projet4">
             <p>Réalisation de mon cv en ligne et responsive</p>
+            <!-- <a href="https://jcmonnet.github.io/CV/"><img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv"></a> -->
             <img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv">
         </article>
         <article id="projet5">
@@ -91,12 +93,12 @@ la photo. -->
     </section>
     <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="passion">
-        <h2>Passion :</h2>
+        <h2>Passion : <span>Le reggae, les concerts et les festivals</span></h2>
         <div class="w3-content ">
-            <img class="mySlides" src="image/concert1.WebP">
-            <img class="mySlides" src="image/concert2.WebP">
-            <img class="mySlides" src="image/concert3.WebP">
-            <img class="mySlides" src="image/concert4.WebP">
+            <img class="mySlides" src="image/concert1.WebP" alt="concert paris">
+            <img class="mySlides" src="image/concert2.WebP" alt="festival reggae sunsplash">
+            <img class="mySlides" src="image/concert3.WebP" alt="festival rototom">
+            <img class="mySlides" src="image/concert4.WebP" alt="concert bob marley">
         </div>
     </section>
     <!-- section pour fonctionnement ancre, et codes couleur -->
@@ -105,33 +107,34 @@ la photo. -->
         <!-- création tableau pour faciliter la mise en forme -->
         <table>
             <tr>
-                <td id="prenom1">
-                    <label for="prenom">Votre prenom</label>
+                <td>
+                    <label id="prenom">Votre prenom</label>
                 </td>
             </tr>
             <tr>
-                <td id="prenom2">
-                    <input type="text" name="prenom" id="prenom" placeholder="Ex: Jean-Charles" size="30"
+                <td>
+                    <input class="noir_blanc" type="text" name="prenom" placeholder="Ex: Jean-Charles" size="30"
                         maxlength="20">
                 </td>
             </tr>
             <tr>
-                <td id="nom1">
-                    <label for="nom">Votre nom</label>
+                <td>
+                    <label  id="nom">Votre nom</label>
                 </td>
             </tr>
             <tr>
-                <td id="nom2">
-                    <input type="text" name="nom" id="nom" placeholder="Ex: Monnet" size="30" maxlength="20">
+                <td>
+                    <input class="noir_blanc" type="text" name="nom" placeholder="Ex: Monnet" size="30" maxlength="20">
                 </td>
             </tr>
             <tr>
-                <td id="mess1"><label>Votre message</label>
+                <td>
+                    <label id="message">Votre message</label>
                 </td>
             </tr>
             <tr>
-                <td id="mess2"><textarea name="message" id="message" placeholder="saisir votre message" rows="6"
-                        cols="33"></textarea>
+                <td class="noir_blanc"><textarea name="message" placeholder="saisir votre message" rows="4"
+                        cols="30"></textarea>
                 </td>
             </tr>
         </table>
