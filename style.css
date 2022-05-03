@@ -1,5 +1,6 @@
 @font-face {
-    font-family:'Raleway', sans-serif; ;
+    font-family: 'Raleway', sans-serif;
+    ;
     src: url("fonts/Raleway-ExtraLight.ttf");
 }
 
@@ -8,17 +9,28 @@
     margin: 0;
 }
 
-/* code couleur et taille police et mise en flex pour gestion du placement des élements */
+/* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
     height: 300px;
-    background: url("image/header.WebP");
+    background: black;
+    animation: mymove 5s infinite;
     display: flex;
     flex-direction: column;
     color: white;
     font-size: 20px;
     justify-content: space-around;
-
 }
+
+@keyframes mymove {
+    from {
+        background-color: grey;
+    }
+
+    to {
+        background-color: black;
+    }
+}
+
 
 /* mis une id pour gérer la mise in-line de ce bloc */
 #navapart {
@@ -38,53 +50,6 @@ a {
     border-radius: 50%;
     border: dashed white 1px;
 }
-
-/* "bloc" regroupant tous les effets au hover */
-#un:hover {
-    cursor: pointer;
-    text-decoration: overline;
-    color: white;
-}
-
-#deux:hover {
-    cursor: pointer;
-    text-decoration: overline;
-    color: white;
-}
-
-#trois:hover {
-    cursor: pointer;
-    text-decoration: overline;
-    color: white;
-}
-
-
-#identite {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif ;
-}
-
-#identite:hover {
-    cursor: pointer;
-    color: orange;
-}
-
-#titre {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#titre:hover {
-    cursor: pointer;
-    color: orange;
-}
-
-
-
-
 /* utilisation d'un webkit pour rotation photo et compatible differents navigateurs */
 #moi:hover {
     -webkit-transition: -webkit-transform .9s;
@@ -94,13 +59,25 @@ a {
     transition: transform .9s;
     cursor: pointer;
 }
-
 #moi:hover {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+/* mise en flex pour gestion alignement photo et nom. Et placement "formation..." centré à part */
+#identite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titre {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background en svg */
@@ -120,14 +97,11 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 #edito p {
     width: 75%;
     margin-top: 10%;
     color: white;
 }
-
 
 /* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
 #projet {
@@ -136,12 +110,11 @@ h2 {
 }
 
 /* création d'une div et mise en flex pour organiser la mise en forme des images et des textes */
-#projet div {
+#projet article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
 }
 
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
@@ -168,21 +141,39 @@ h2 {
     border-radius: 0% 20%;
 }
 
-/* animation première image */
+/* animation des images section projet */
+/* effet mouvement simple */
 #skew:hover {
     transform: skew(30deg, 20deg);
 }
 
+/* effet zoom */
 #imgprojet2 {
     width: 40%;
     transition: transform .1s;
     cursor: pointer;
 }
+
 #imgprojet2:hover {
     -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5);  
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
+
+/* organisation section passion */
+#passion {
+    background-color: black;
+    border-top: solid grey 5px;
+}
+.w3-content {
+    display: flex;
+    align-items: center;
+}
+.mySlides {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
 
 /* code couleur texte et background */
 #contact {
@@ -216,6 +207,42 @@ table {
     height: 2rem;
 }
 
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: black;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 10% ;
+}
+
+button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+    border-radius: 10% ;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
 /* flex pour centrage et code couleur */
 footer {
     display: flex;

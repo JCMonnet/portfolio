@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <title>Mon Portfolio</title>
     <meta
@@ -64,31 +65,40 @@ la photo. -->
     <section id="projet">
         <h2>Projets :</h2>
         <!-- création div pas nécessaires pour le flexbox. Mais en prévision des effets sur images -->
-        <div id="projet1">
+        <article id="projet1">
             <img class="radius1" id="skew" src="image/codehtml.WebP" alt="exemple de code">
             <p>J'ai appris la structure d'une page html de base. Ainsi que les principales balises sémantiques</p>
-        </div>
-        <div id="projet2">
+        </article>
+        <article id="projet2">
             <p>Connaissance des balises courantes. Utilisation de flex-box et des selecteurs. Et d'animations simples.
             </p>
             <img class="radius2" id="imgprojet2" src="image/flexbox.WebP" alt="logo css">
-        </div>
-        <div id="projet3">
+        </article>
+        <article id="projet3">
             <img class="radius1" src="image/js.WebP" alt="logo javascript">
             <p>Connaissance des élements du dom. Déclaration de variables. Ajout d'eventlistener. Et fonctions simples
             </p>
-        </div>
-        <div id="projet4">
+        </article>
+        <article id="projet4">
             <p>Réalisation de mon cv en ligne et responsive</p>
             <img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv">
-        </div>
-        <div id="projet5">
+        </article>
+        <article id="projet5">
             <img class="radius1" src="image/hulu.WebP" alt="image du site cloné">
             <p>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
             </p>
+        </article>
+    </section>
+    <!-- section pour fonctionnement ancre, et codes couleur -->
+    <section id="passion">
+        <h2>Passion :</h2>
+        <div class="w3-content ">
+            <img class="mySlides" src="image/concert1.WebP">
+            <img class="mySlides" src="image/concert2.WebP">
+            <img class="mySlides" src="image/concert3.WebP">
+            <img class="mySlides" src="image/concert4.WebP">
         </div>
     </section>
-
     <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="contact">
         <h2>contact :</h2>
@@ -125,7 +135,7 @@ la photo. -->
                 </td>
             </tr>
         </table>
-        <div id="btn"><input id="bouton" type="submit" value="valider"></div>
+        <div id="btn"><button>valider</button></div>
     </section>
 
     <footer>
@@ -133,7 +143,7 @@ la photo. -->
         <i id="reseau2" class="fa-brands fa-twitter fa-4x"></i>
         <i id="reseau3" class="fa-brands fa-instagram fa-4x"></i>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
