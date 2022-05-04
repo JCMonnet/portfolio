@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Mon Portfolio</title>
     <!-- <meta
-        content= name "portfolio" "Voici mon portfolio. Vous souhaitez savoir qui je suis? Vous souhaitez connaitre mes projets? Consultez le."> -->
+        description = name "portfolio" "Voici mon portfolio. Vous souhaitez savoir qui je suis? Vous souhaitez connaitre mes projets? Consultez le."> -->
 </head>
 
 <body>
@@ -34,14 +34,14 @@ la photo. -->
         </nav>
         <div id="identite">
             <p>Jean-Charles  Monnet</p>
-            <img id="moi" src="image/portrait.WebP" alt="ma photo de profil">
+            <button id="lightmode"><strong>Light Mode</strong></button>      
         </div>
         <div id="titre">En formation developpeur web</div>
     </header>
 
     <!-- création de la section edito, en y incluant le h2 et le p. En prévision d'une mise en flex.
         Pour obtenir la mise en forme du paragraphe, comme sur la maquette -->
-    <section id="edito">
+    <section id="edito" class="lightmode">
         <h2>Edito :</h2>
         <p> Hello world, je m'appelle donc
             Jean-Charles ou JC pour ceux qui préferent. Après plus de vingt ans passés
@@ -66,31 +66,35 @@ la photo. -->
     <section id="projet">
         <h2>Projets :</h2>
         <!-- création div pas nécessaires pour le flexbox. Mais en prévision des effets sur images -->
-        <article id="projet1">
+        <div id="projet1">
             <img class="radius1" id="skew" src="image/codehtml.WebP" alt="exemple de code">
             <p>J'ai appris la structure d'une page html de base. Ainsi que les principales balises sémantiques</p>
-        </article>
-        <article id="projet2">
+        </div>
+        <div id="projet2">
             <p>Connaissance des balises courantes. Utilisation de flex-box et des selecteurs. Et d'animations simples.
             </p>
             <img class="radius2" id="imgprojet2" src="image/flexbox.WebP" alt="logo css">
-        </article>
-        <article id="projet3">
+        </div>
+        <div id="projet3">
             <img class="radius1" src="image/js.WebP" alt="logo javascript">
             <p>Connaissance des élements du dom. Déclaration de variables. Ajout d'eventlistener. Et fonctions simples
             </p>
-        </article>
-        <article id="projet4">
+        </div>
+        <div id="projet4">
             <p>Réalisation de mon cv en ligne et responsive</p>
-            <!-- <a href="https://jcmonnet.github.io/CV/"><img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv"></a> -->
-            <img class="radius2" src="image/cv.WebP" alt="capture d'ecran de mon cv">
-        </article>
-        <article id="projet5">
+            <img class="radius2" id="imgprojet4" src="image/cv.WebP" alt="capture d'ecran de mon cv">
+        </div>
+        <div id="projet5">
             <img class="radius1" src="image/hulu.WebP" alt="image du site cloné">
             <p>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
             </p>
-        </article>
+        </div>
     </section>
+
+    
+<div id="modal1">
+    <div id="modalcontent"><img src="image/cvbig.webp" alt="mon cv en grand"></div>
+</div>
     <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="passion">
         <h2>Passion : <span>Le reggae, les concerts et les festivals</span></h2>
@@ -139,6 +143,14 @@ la photo. -->
             </tr>
         </table>
         <div id="btn"><button>valider</button></div>
+
+        <div id="coordonnée">
+            <h3>Pour me contacter:</h3>
+            <p>12 voie bachelière</p>
+            <p>27100 Val de Reuil</p>
+            <p>07 67 37 46 88</p>
+            <p>jcmonnet0408@gmail.com</p>
+        </div>
     </section>
 
     <footer>
