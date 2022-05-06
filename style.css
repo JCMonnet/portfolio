@@ -1,5 +1,5 @@
-:root,
-html[data-theme='dark'] {
+/* création de toutes les variables pour le switch dark/light mode */
+:root,html[data-theme='dark'] {
     --bck-header: black;
     --header-col: white;
     --my-move-header:black;
@@ -21,9 +21,7 @@ html[data-theme='dark'] {
     --reseau1-col:white;
     --reseau2-col:orange;
     --reseau3-col:white;
-
 }
-
 html[data-theme='light'] {
     --bck-header:#DCDCDC;
     --my-move-header:white;
@@ -46,20 +44,15 @@ html[data-theme='light'] {
     --reseau1-col:orange;
     --reseau2-col:black;
     --reseau3-col:orange;
-
 }
-
-
 @font-face {
     font-family: 'Raleway', sans-serif;
     src: url("fonts/Raleway-ExtraLight.ttf");
 }
-
 * {
     font-family: "raleway";
     margin: 0;
 }
-
 /* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
     height: 300px;
@@ -71,7 +64,7 @@ header {
     font-size: 20px;
     justify-content: space-around;
 }
-
+/* effet de noir au gris du background header */
 @keyframes mymove {
     from {
         background-color: grey;
@@ -81,20 +74,17 @@ header {
         background-color: var(--my-move-header);
     }
 }
-
-
 /* mis une id pour gérer la mise in-line de ce bloc */
 #navapart {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
-
 a {
     color: orange;
     text-decoration: none;
 }
-
+/* bouton du light mode */
 #lightmode {
     height: 80px;
     width: 100px;
@@ -102,23 +92,17 @@ a {
     border: dashed white 1px;
     background-color: var(--bck-light-btn);
     color: var(--light-btn-col);
-}
-
-strong {
     font-size: 0.3em;
     vertical-align: middle;
 }
-
-/* rotation photo */
+/* rotation bouton lightmode */
 #lightmode:hover {
     transition: transform .9s;
     cursor: pointer;
 }
-
 #lightmode:hover {
     transform: rotate(360deg);
 }
-
 /* mise en flex pour gestion alignement photo et nom. Et placement "formation..." centré à part */
 #identite {
     display: flex;
@@ -127,13 +111,12 @@ strong {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
-
+/* mise en flex pour gérer le centrage */
 #titre {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background en svg */
 #edito {
     border-top: grey solid 5px;
@@ -143,26 +126,23 @@ strong {
     background-attachment: fixed;
     background-size: cover;
 }
-
 h2 {
     color: orange;
     margin-top: 8%;
     margin-bottom: 8%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* mis à 75% pour obtenir l'effet bloc/article en mobile */
 #edito p {
     width: 75%;
     margin-top: 10%;
     color: var(--col-edito);
 }
-
 /* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
 #projet {
     background-color: var(--bck-projet);
     border-top: grey solid 5px;
 }
-
 /* création d'une div et mise en flex pour organiser la mise en forme des images et des textes. Puis ajour d'une id à chaque projet
 pour pouvoir individualiser les animations à venir */
 #projet div {
@@ -171,51 +151,44 @@ pour pouvoir individualiser les animations à venir */
     justify-content: space-around;
     align-items: center;
 }
-
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
 #projet p {
     color: var(--p-projet-col);
     width: 40%;
     margin-bottom: 5%;
 }
-
+/* 40% width pour en avoir que 2 en largeur */
 #projet img {
     width: 40%;
     height: 10%;
     margin-bottom: 5%;
 }
-
 /* création classe pour l'effet radius inversé 1 image sur 2 */
 .radius1 {
     border: solid var(--img-projet-border) 3px;
     border-radius: 20% 0%;
     box-shadow: 4px 4px var(--shadow-radius1);
 }
-
 .radius2 {
     border: solid orange 3px;
     border-radius: 0% 20%;
     box-shadow: 4px 4px var(--shadow-radius1); 
 
 }
-
 /* animation des images section projet */
 /* effet mouvement simple */
 #skew:hover {
     transform: skew(30deg, 20deg);
 }
-
 /* effet zoom */
 #imgprojet2 {
     width: 40%;
     transition: transform .1s;
     cursor: pointer;
 }
-
 #imgprojet2:hover {
     transform: scale(1.5);
 }
-
 /* modal pour cv en grand format */
 #modal1 {
     background: grey;
@@ -228,34 +201,27 @@ pour pouvoir individualiser les animations à venir */
     z-index: 1;
     object-fit: cover;
 }
-
 #modalcontent {
     margin: auto;
     overflow: scroll;
 }
-
 /* organisation section passion */
 span {
     color: var(--span-col);
 }
-
 #passion {
     background-color: var(--bck-passion);
     border-top: solid grey 5px;
 }
-
 .w3-content {
     display: flex;
     align-items: center;
 }
-
 .mySlides {
     width: 100%;
     margin-bottom: 5%;
     height: 50%;
 }
-
-
 /* code couleur texte et background */
 #contact {
     background-image: var(--bck-contact);
@@ -266,17 +232,14 @@ span {
     flex-direction: column;
     align-items: center;
 }
-
 #contact h2 {
     align-self: flex-start;
 }
-
 #nom,
 #prenom,
 #message {
     color: var(--label-contact-color);
 }
-
 button {
     z-index: 1;
     position: relative;
@@ -290,7 +253,7 @@ button {
     margin-bottom: 4%;
     height: 2em;
 }
-
+/* animation du bouton valider */
 button::before {
     content: '';
     z-index: -1;
@@ -305,16 +268,13 @@ button::before {
     transition: transform 0.25s ease-in-out;
     border-radius: 10%;
 }
-
 button:hover {
     cursor: pointer;
 }
-
 button:hover::before {
     transform-origin: center left;
     transform: scaleX(1);
 }
-
 /* flex pour centrage et code couleur */
 footer {
     display: flex;
@@ -322,25 +282,25 @@ footer {
     background-color: var(--bck-footer);
     border-top: 5px solid grey;
 }
-
-
-/* id sur chaque icone pour pouvoir effectuer les demandes de modification taille et couleur */
+/* id sur chaque icone pour pouvoir effectuer les demandes de modification taille et couleur et les animations */
 #reseau1 {
     color: var(--reseau1-col);
 }
+/* pour qu'il recule/revienne à gauche d'où le -, axe horizontal x */
 #reseau1:hover {
     transform: translateX(-30px);
 }
 #reseau2 {
     color: var(--reseau2-col);
 }
+/* pour qu'il s'envole/remonte, vertical axe y */
 #reseau2:hover {
     transform: translateY(-30px) ;
 }
-
 #reseau3 {
     color: var(--reseau3-col);
 }
+/* idem reseau1, mais pour avancer/droite, donc pas de - */
 #reseau3:hover {
     transform: translateX(30px);
 }
