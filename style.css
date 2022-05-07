@@ -1,30 +1,32 @@
 /* création de toutes les variables pour le switch dark/light mode */
-:root,html[data-theme='dark'] {
+:root,
+html[data-theme='dark'] {
     --bck-header: black;
     --header-col: white;
-    --my-move-header:black;
+    --my-move-header: black;
     --bck-edito: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%232b2b2b'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     --col-edito: white;
     --bck-light-btn: white;
     --light-btn-col: black;
     --bck-projet: black;
     --p-projet-col: white;
-    --img-projet-border:white;
-    --shadow-radius1:white;
+    --img-projet-border: white;
+    --shadow-radius1: white;
     --span-col: white;
     --bck-passion: black;
     --bck-contact: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%232b2b2b'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     --label-contact-color: white;
     --bck-btn-valid: white;
     --btn-valid-col: black;
-    --bck-footer:black;
-    --reseau1-col:white;
-    --reseau2-col:orange;
-    --reseau3-col:white;
+    --bck-footer: black;
+    --reseau1-col: white;
+    --reseau2-col: orange;
+    --reseau3-col: white;
 }
+
 html[data-theme='light'] {
-    --bck-header:#DCDCDC;
-    --my-move-header:white;
+    --bck-header: #DCDCDC;
+    --my-move-header: white;
     --bck-edito: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23EAEAEA'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f5f5f5'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     --col-edito: black;
     --header-col: black;
@@ -32,27 +34,30 @@ html[data-theme='light'] {
     --light-btn-col: white;
     --bck-projet: white;
     --p-projet-col: black;
-    --img-projet-border:black;
-    --shadow-radius1:black;
+    --img-projet-border: black;
+    --shadow-radius1: black;
     --span-col: black;
     --bck-passion: white;
     --bck-contact: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23EAEAEA'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f5f5f5'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     --label-contact-color: black;
     --bck-btn-valid: grey;
     --btn-valid-col: white;
-    --bck-footer:white;
-    --reseau1-col:orange;
-    --reseau2-col:black;
-    --reseau3-col:orange;
+    --bck-footer: white;
+    --reseau1-col: orange;
+    --reseau2-col: black;
+    --reseau3-col: orange;
 }
+
 @font-face {
     font-family: 'Raleway', sans-serif;
     src: url("fonts/Raleway-ExtraLight.ttf");
 }
+
 * {
     font-family: "raleway";
     margin: 0;
 }
+
 /* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
     height: 300px;
@@ -64,6 +69,7 @@ header {
     font-size: 20px;
     justify-content: space-around;
 }
+
 /* effet de noir au gris du background header */
 @keyframes mymove {
     from {
@@ -74,16 +80,19 @@ header {
         background-color: var(--my-move-header);
     }
 }
+
 /* mis une id pour gérer la mise in-line de ce bloc */
 #navapart {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
+
 a {
     color: orange;
     text-decoration: none;
 }
+
 /* bouton du light mode */
 #lightmode {
     height: 80px;
@@ -95,14 +104,17 @@ a {
     font-size: 0.3em;
     vertical-align: middle;
 }
+
 /* rotation bouton lightmode */
 #lightmode:hover {
     transition: transform .9s;
     cursor: pointer;
 }
+
 #lightmode:hover {
     transform: rotate(360deg);
 }
+
 /* mise en flex pour gestion alignement photo et nom. Et placement "formation..." centré à part */
 #identite {
     display: flex;
@@ -111,12 +123,14 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
+
 /* mise en flex pour gérer le centrage */
 #titre {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background en svg */
 #edito {
     border-top: grey solid 5px;
@@ -126,23 +140,27 @@ a {
     background-attachment: fixed;
     background-size: cover;
 }
+
 h2 {
     color: orange;
     margin-top: 8%;
     margin-bottom: 8%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* mis à 75% pour obtenir l'effet bloc/article en mobile */
 #edito p {
     width: 75%;
     margin-top: 10%;
     color: var(--col-edito);
 }
+
 /* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
 #projet {
     background-color: var(--bck-projet);
     border-top: grey solid 5px;
 }
+
 /* création d'une div et mise en flex pour organiser la mise en forme des images et des textes. Puis ajour d'une id à chaque projet
 pour pouvoir individualiser les animations à venir */
 #projet div {
@@ -151,45 +169,63 @@ pour pouvoir individualiser les animations à venir */
     justify-content: space-around;
     align-items: center;
 }
+
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
 #projet p {
     color: var(--p-projet-col);
     width: 40%;
     margin-bottom: 5%;
 }
+
 /* 40% width pour en avoir que 2 en largeur */
 #projet img {
     width: 40%;
     height: 10%;
     margin-bottom: 5%;
 }
+
 /* création classe pour l'effet radius inversé 1 image sur 2 */
 .radius1 {
     border: solid var(--img-projet-border) 3px;
     border-radius: 20% 0%;
     box-shadow: 4px 4px var(--shadow-radius1);
 }
+
 .radius2 {
     border: solid orange 3px;
     border-radius: 0% 20%;
-    box-shadow: 4px 4px var(--shadow-radius1); 
+    box-shadow: 4px 4px var(--shadow-radius1);
 
 }
+
 /* animation des images section projet */
 /* effet mouvement simple */
 #skew:hover {
     transform: skew(30deg, 20deg);
 }
+
 /* effet zoom */
 #imgprojet2 {
-    width: 40%;
     transition: transform .1s;
     cursor: pointer;
 }
 #imgprojet2:hover {
     transform: scale(1.5);
 }
-/* modal pour cv en grand format */
+/* effet 360 degrés. Transform 9s pour pas tourner trop vite. Puis le rotate(360) au hover */
+#projet3 {
+    transition: transform .9s;
+    cursor: pointer;
+}
+#projet3:hover {
+    transform: rotate(360deg);
+}
+
+#imgprojet4 {
+    cursor: pointer;
+}
+/* modal pour cv en grand format. Display none pour la cacher avant clic. Avec top,left 0 pour qu'elle "s'accroche en haut à gauche.
+Puis le 100% w,l pour qu'elle soit bien full screen. */
 #modal1 {
     background: grey;
     display: none;
@@ -199,12 +235,23 @@ pour pouvoir individualiser les animations à venir */
     height: 100%;
     position: fixed;
     z-index: 1;
-    object-fit: cover;
 }
+/* scroll latéral pour version mobile */
 #modalcontent {
     margin: auto;
     overflow: scroll;
 }
+/* jeu d'opacité pour assombrir les couleurs flashies et hors charte graphique des images projet.
+Transition opacity 0.6 à 1 */
+#projet5 img {
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out;
+}
+#projet5 img:hover {
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+​}
+
 /* organisation section passion */
 span {
     color: var(--span-col);
@@ -213,10 +260,12 @@ span {
     background-color: var(--bck-passion);
     border-top: solid grey 5px;
 }
+/* flex pour centrage du slider */
 .w3-content {
     display: flex;
     align-items: center;
 }
+/* pour fixer la taille des images du slide */
 .mySlides {
     width: 100%;
     margin-bottom: 5%;
@@ -232,19 +281,31 @@ span {
     flex-direction: column;
     align-items: center;
 }
+
 #contact h2 {
     align-self: flex-start;
 }
+
 #nom,
 #prenom,
 #message {
     color: var(--label-contact-color);
 }
+
+#contact p {
+    color: white;
+    width: 50%;
+    border-top: 2px solid orange;
+    border-left: 2px solid orange;
+    margin-bottom: 5%;
+    padding-left: 5px;
+
+}
+/* animation du bouton valider: Obtenue grâce au passage index 1 à -1. Des positions relative à absolute.
+Puis le transition/transform/scale. Le temps 0.25. Le point d'entrée de l'anim (centre gauche). Et le point de sorrtie centre droit */
 button {
     z-index: 1;
     position: relative;
-    font-size: inherit;
-    font-family: inherit;
     color: var(--btn-valid-col);
     outline: none;
     border: none;
@@ -253,7 +314,6 @@ button {
     margin-bottom: 4%;
     height: 2em;
 }
-/* animation du bouton valider */
 button::before {
     content: '';
     z-index: -1;
@@ -271,10 +331,12 @@ button::before {
 button:hover {
     cursor: pointer;
 }
+
 button:hover::before {
     transform-origin: center left;
     transform: scaleX(1);
 }
+
 /* flex pour centrage et code couleur */
 footer {
     display: flex;
@@ -282,25 +344,59 @@ footer {
     background-color: var(--bck-footer);
     border-top: 5px solid grey;
 }
+
 /* id sur chaque icone pour pouvoir effectuer les demandes de modification taille et couleur et les animations */
 #reseau1 {
     color: var(--reseau1-col);
 }
+
 /* pour qu'il recule/revienne à gauche d'où le -, axe horizontal x */
 #reseau1:hover {
     transform: translateX(-30px);
 }
+
 #reseau2 {
     color: var(--reseau2-col);
 }
+
 /* pour qu'il s'envole/remonte, vertical axe y */
 #reseau2:hover {
-    transform: translateY(-30px) ;
+    transform: translateY(-30px);
 }
+
 #reseau3 {
     color: var(--reseau3-col);
 }
+
 /* idem reseau1, mais pour avancer/droite, donc pas de - */
 #reseau3:hover {
     transform: translateX(30px);
+}
+
+@media (min-width:1920px) {
+    p {
+        font-size: 1.5em;
+    }
+    #edito p {
+        margin-bottom: 2%;
+    }
+
+    #contact h2 {
+        margin-top: 2%;
+        justify-content: flex-start;
+    }
+
+    #contact {
+        height: 60vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contact p {
+        color: white;
+        font-size: 1.5em;
+        width: 50%;
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+    }
 }

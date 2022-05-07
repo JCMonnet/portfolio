@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" html[data-theme='dark']>
+<html lang="fr" html[data-theme='dark' ]>
 
 <head>
     <meta charset="UTF-8">
@@ -33,8 +33,8 @@ la photo. -->
             </ul>
         </nav>
         <div id="identite">
-            <p>Jean-Charles  Monnet</p>
-            <button id="lightmode">Light Mode</button>      
+            <p>Jean-Charles Monnet</p>
+            <button id="lightmode">Light Mode</button>
         </div>
         <div id="titre">En formation developpeur web</div>
     </header>
@@ -88,13 +88,18 @@ la photo. -->
             <img class="radius1" src="image/hulu.WebP" alt="image du site cloné">
             <p>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
             </p>
+        <div id="projet6">
+                <p>Intégration d'une maquette figma. Avec respect des mises en forme, polices,filtres. En responsive. Et
+                    avec dark mode.
+                </p>
+                <img class="radius2" id="img6" src="image/figma.webp" alt="image de la maquette">
         </div>
     </section>
 
-    
-<div id="modal1">
-    <div id="modalcontent"><img src="image/cvbig.webp" alt="mon cv en grand"></div>
-</div>
+
+    <div id="modal1">
+        <div id="modalcontent"><img src="image/cvbig.webp" alt="mon cv en grand"></div>
+    </div>
     <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="passion">
         <h2>Passion : <span>Le reggae, les concerts et les festivals</span></h2>
@@ -109,47 +114,56 @@ la photo. -->
     <section id="contact">
         <h2>contact :</h2>
         <!-- création tableau pour faciliter la mise en forme -->
-        <table>
-            <tr>
-                <td>
-                    <label id="prenom">Votre prenom</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input class="noir_blanc" type="text" name="prenom" placeholder="Ex: Jean-Charles" size="30"
-                        maxlength="20">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label  id="nom">Votre nom</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input class="noir_blanc" type="text" name="nom" placeholder="Ex: Monnet" size="30" maxlength="20">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label id="message">Votre message</label>
-                </td>
-            </tr>
-            <tr>
-                <td class="noir_blanc"><textarea name="message" placeholder="saisir votre message" rows="4"
-                        cols="30"></textarea>
-                </td>
-            </tr>
-        </table>
-        <button id="btn">valider</button>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label id="prenom">Votre prenom</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="noir_blanc" type="text" name="prenom" placeholder="Ex: Jean-Charles" size="30"
+                            maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="nom">Votre nom</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="noir_blanc" type="text" name="nom" placeholder="Ex: Monnet" size="30"
+                            maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="message">Votre message</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="noir_blanc"><textarea name="message" placeholder="saisir votre message" rows="4"
+                            cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button id="btn">valider</button>
+
+        </div>
+        <div>
+            <p>12 Voie bacheliere 27100 Val de Reuil<br>
+                07 67 37 46 88<br>
+                jcmonnet0408@gmail.com</p>
+        </div>
     </section>
 
     <footer>
         <i id="reseau1" class="fa-brands fa-facebook fa-4x"></i>
         <i id="reseau2" class="fa-brands fa-twitter fa-4x"></i>
         <i id="reseau3" class="fa-brands fa-linkedin-in fa-4x"></i>
-        </footer>
+    </footer>
     <script src="app.js"></script>
 </body>
 
