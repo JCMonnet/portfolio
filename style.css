@@ -91,7 +91,7 @@ header {
 }
 
 a {
-    color: orange;
+    color: #FFC745;
     text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ a {
     border: dashed white 1px;
     background-color: var(--bck-light-btn);
     color: var(--light-btn-col);
-    font-size: 0.3em;
+    font-size: 0.8em;
     vertical-align: middle;
 }
 
@@ -123,7 +123,6 @@ a {
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
 }
 
 /* mise en flex pour gérer le centrage */
@@ -144,7 +143,7 @@ a {
 }
 
 h2 {
-    color: orange;
+    color: #FFC745;
     margin-top: 8%;
     margin-bottom: 8%;
     font-family: Arial, Helvetica, sans-serif;
@@ -201,7 +200,7 @@ Celle en orange va rester orange en dark ou light mode. Donc pas de var. Ajout f
 }
 
 .radius2 {
-    border: solid orange 3px;
+    border: solid #FFC745 3px;
     border-radius: 0% 20%;
     box-shadow: 4px 4px var(--shadow-radius1);
     filter: grayscale(10);
@@ -317,8 +316,8 @@ span {
 #contact p {
     color: var(--contact-p-col);
     width: 50%;
-    border-top: 2px solid orange;
-    border-left: 2px solid orange;
+    border-top: 2px solid #FFC745;
+    border-left: 2px solid #FFC745;
     margin-bottom: 5%;
     padding-left: 5px;
 }
@@ -346,7 +345,7 @@ button::before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: orange;
+    background-color: #FFC745;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
@@ -422,7 +421,7 @@ Pour obtenir effet occupation du bloc et centrage */
     #contact p {
         font-size: 1.5em;
         width: 40%;
-        border-left: 2px solid orange;
+        border-left: 2px solid #FFC745;
         border-top: none;
     }
 }
