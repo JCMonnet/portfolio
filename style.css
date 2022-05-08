@@ -56,7 +56,7 @@ html[data-theme='light'] {
 }
 
 * {
-    font-family: "raleway";
+    font-family: "raleway",sans-serif;
     margin: 0;
 }
 
@@ -321,7 +321,6 @@ span {
     border-left: 2px solid orange;
     margin-bottom: 5%;
     padding-left: 5px;
-
 }
 
 /* animation du bouton valider: Obtenue grâce au passage index 1 à -1. Des positions relative à absolute.
