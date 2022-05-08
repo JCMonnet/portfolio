@@ -21,7 +21,7 @@ html[data-theme='dark'] {
     --btn-valid-col: black;
     --bck-footer: black;
     --reseau1-col: white;
-    --reseau2-col: orange;
+    --reseau2-col: #FEDF9D;
     --reseau3-col: white;
 }
 
@@ -45,9 +45,9 @@ html[data-theme='light'] {
     --bck-btn-valid: grey;
     --btn-valid-col: white;
     --bck-footer: white;
-    --reseau1-col: orange;
+    --reseau1-col: #FEDF9D;
     --reseau2-col: black;
-    --reseau3-col: orange;
+    --reseau3-col: #FEDF9D;
 }
 
 @font-face {
@@ -91,7 +91,7 @@ header {
 }
 
 a {
-    color: #FFC745;
+    color: #FEDF9D;
     text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ a {
 }
 
 h2 {
-    color: #FFC745;
+    color: #FEDF9D;
     margin-top: 8%;
     margin-bottom: 8%;
     font-family: Arial, Helvetica, sans-serif;
@@ -200,7 +200,7 @@ Celle en orange va rester orange en dark ou light mode. Donc pas de var. Ajout f
 }
 
 .radius2 {
-    border: solid #FFC745 3px;
+    border: solid #FEDF9D 3px;
     border-radius: 0% 20%;
     box-shadow: 4px 4px var(--shadow-radius1);
     filter: grayscale(10);
@@ -316,8 +316,8 @@ span {
 #contact p {
     color: var(--contact-p-col);
     width: 50%;
-    border-top: 2px solid #FFC745;
-    border-left: 2px solid #FFC745;
+    border-top: 2px solid #FEDF9D;
+    border-left: 2px solid #FEDF9D;
     margin-bottom: 5%;
     padding-left: 5px;
 }
@@ -345,7 +345,7 @@ button::before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FFC745;
+    background-color: #FEDF9D;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
@@ -421,7 +421,7 @@ Pour obtenir effet occupation du bloc et centrage */
     #contact p {
         font-size: 1.5em;
         width: 40%;
-        border-left: 2px solid #FFC745;
+        border-left: 2px solid #FEDF9D;
         border-top: none;
     }
 }
