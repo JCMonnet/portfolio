@@ -21,6 +21,7 @@ body {
     --contact-p-col:white;
     --bck-btn-valid: white;
     --btn-valid-col: black;
+    --btn-before-col:#FEDF9D;
     --bck-footer: black;
     --reseau1-col: white;
     --reseau2-col: #FEDF9D;
@@ -49,6 +50,7 @@ body {
     --contact-p-col:black;
     --bck-btn-valid: #172AFF;
     --btn-valid-col: white;
+    --btn-before-col:#172AFF;
     --bck-footer: white;
     --reseau1-col: #172AFF;
     --reseau2-col: black;
@@ -69,7 +71,7 @@ body {
 header {
     height: 350px;
     background: var(--bck-header);
-    animation: mymove 5s infinite;
+    animation: mymove 8s infinite;
     display: flex;
     flex-direction: column;
     color: var(--header-col);
@@ -80,9 +82,8 @@ header {
 /* effet de noir au gris du background header */
 @keyframes mymove {
     from {
-        background-color: grey;
+        background-color:#EBF2FF;
     }
-
     to {
         background-color: var(--my-move-header);
     }
@@ -348,7 +349,7 @@ button::before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FEDF9D;
+    background-color:var(--btn-before-col);
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
