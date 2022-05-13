@@ -64,9 +64,7 @@ body {
     font-family: "raleway", sans-serif;
     margin: 0;
 }
-body {
-    padding 5px;
-}
+
 /* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
     height: 350px;
@@ -164,6 +162,7 @@ button:hover::before {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
 }
 
 /* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background en svg */
@@ -178,8 +177,7 @@ button:hover::before {
 
 h2 {
     color: var(--h2-col);
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin: 8% 0% 8% 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -188,6 +186,7 @@ h2 {
     width: 75%;
     margin-top: 10%;
     color: var(--col-edito);
+    padding-right: 10px;
 }
 
 /* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
@@ -214,8 +213,8 @@ pour pouvoir individualiser les animations à venir */
 
 /* 40% width pour en avoir que 2 en largeur (1 img et 1 p fixé lui aussi à 40% width */
 #projet img {
-    /* width: 40%;
-    height: 10%; */
+    width: 40%;
+    height: 10%;
     margin-bottom: 5%;
 }
 
@@ -303,6 +302,12 @@ Filter graysacale 10 à 0 + Transition opacity 0.6 à 1 */
     transition: opacity .55s ease-in-out;
     filter: grayscale(0);
 }
+
+/* #projet6 .taille {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+} */
 
 /* organisation section passion */
 span {
