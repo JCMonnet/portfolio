@@ -64,7 +64,9 @@ body {
     font-family: "raleway", sans-serif;
     margin: 0;
 }
-
+body {
+    padding 5px;
+}
 /* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
     height: 350px;
@@ -212,8 +214,8 @@ pour pouvoir individualiser les animations à venir */
 
 /* 40% width pour en avoir que 2 en largeur (1 img et 1 p fixé lui aussi à 40% width */
 #projet img {
-    width: 40%;
-    height: 10%;
+    /* width: 40%;
+    height: 10%; */
     margin-bottom: 5%;
 }
 
@@ -417,4 +419,10 @@ Pour obtenir effet occupation du bloc et centrage */
         width: 50%;
         
     }
+}
+.taille {
+display: block;
+width: 40%;
+height: 10%;
+object-fit: cover;
 }
