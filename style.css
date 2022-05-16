@@ -67,7 +67,7 @@ body {
 
 /* code couleur et taille police et mise en flex pour gestion du placement des élements. Et animation noir à gris */
 header {
-    height: 350px;
+    height: 400px;
     background: var(--bck-header);
     background-size: cover;
     display: flex;
@@ -177,7 +177,6 @@ button:hover::before {
 
 h2 {
     color: var(--h2-col);
-    margin: 8% 0% 8% 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -197,6 +196,7 @@ h2 {
 
 /* création d'une div et mise en flex pour organiser la mise en forme des images et des textes. Puis ajour d'une id à chaque projet
 pour pouvoir individualiser les animations à venir */
+
 #projet div {
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +207,7 @@ pour pouvoir individualiser les animations à venir */
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
 #projet p {
     color: var(--p-projet-col);
-    width: 40%;
+    width: 30%;
     margin-bottom: 5%;
 }
 
@@ -288,7 +288,8 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
     overflow: scroll;
 }
 
-/* Filtre pour éviter l'effet des couleurs qui jurent (bleu,vert) avec les autres couleurs de la page.
+/* Filtre pour éviter 
+l'effet des couleurs qui jurent (bleu,vert) avec les autres couleurs de la page.
 Filter graysacale 10 à 0 + Transition opacity 0.6 à 1 */
 #projet5 img {
     cursor: pointer;
@@ -303,13 +304,14 @@ Filter graysacale 10 à 0 + Transition opacity 0.6 à 1 */
     filter: grayscale(0);
 }
 
-/* #projet6 .taille {
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
+/* #projet6 a {
+    width: 500px;
+    height:350px;
 } */
-
-/* organisation section passion */
+/* #projet6 div a img {
+    width: 100%;
+} */
+/* organisation sevhction passion */
 span {
     color: var(--span-col);
 }
@@ -341,12 +343,19 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #contact h2 {
     align-self: flex-start;
     margin-top: 2%;
+   
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+ justify-content:space-evenly;
+ 
 }
 #nom,
 #prenom,
@@ -415,19 +424,11 @@ Pour obtenir effet occupation du bloc et centrage */
     }
 
     #contact {
-        height: 80vh;
+        height: 60vh;
         justify-content: space-around;
     }
 
     #contact p {
         font-size: 1em;
-        width: 50%;
-        
     }
-}
-.taille {
-display: block;
-width: 40%;
-height: 10%;
-object-fit: cover;
 }
