@@ -22,6 +22,7 @@ body {
     --btn-valid-col: black;
     --btn-before-col: #FEDF9D;
     --bck-footer: black;
+    --bord-footer-col:#FEDF9D;
     --reseau1-col: #E7E7DA;
     --reseau2-col: #FEDF9D;
     --reseau3-col: #E7E7DA;
@@ -50,6 +51,7 @@ body {
     --btn-valid-col: black;
     --btn-before-col: #172AFF;
     --bck-footer: #E7E7DA;
+    --bord-footer-col:#172AFF;
     --reseau1-col: #172AFF;
     --reseau2-col: grey;
     --reseau3-col: #172AFF;
@@ -62,6 +64,8 @@ body {
 
 * {
     font-family: "raleway", sans-serif;
+}
+body {
     margin: 0;
 }
 
@@ -178,12 +182,14 @@ button:hover::before {
 h2 {
     color: var(--h2-col);
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin: 2% 0 2% 0;
 }
 
 /* mis à 75% pour obtenir l'effet bloc/article en mobile */
 #edito p {
     width: 75%;
-    margin-top: 10%;
+    margin-top: 5%;
     color: var(--col-edito);
     padding-right: 10px;
 }
@@ -205,7 +211,7 @@ article {
 }
 
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
-article p {
+article h4 {
     color: var(--p-projet-col);
     width: 40%;
     margin-bottom: 5%;
@@ -214,7 +220,6 @@ article p {
 /* 40% width pour en avoir que 2 en largeur (1 img et 1 p fixé lui aussi à 40% width */
 article img {
     width: 40%;
-    height: 10%;
     margin-bottom: 5%;
 }
 
@@ -267,6 +272,9 @@ article img:nth-child(5) {
 article img:nth-child(5):hover {
     transform: rotate(360deg);
 }
+article img:nth-child(6):hover {
+    transform: none;
+}
 
 article a {
     width: 40%;
@@ -298,7 +306,7 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
 }
 
 
-/* organisation sevhction passion */
+/* organisation section passion */
 span {
     color: var(--span-col);
 }
@@ -335,23 +343,18 @@ span {
 
 #contact h2 {
     align-self: flex-start;
-    margin-top: 2%;
-   
+    padding-left: 10px;
 }
 #contact form {
     display: flex;
     flex-direction: column;
- justify-content:space-evenly;
- 
 }
-#nom,
-#prenom,
-#message {
+form p {
     color: var(--label-contact-color);
+    margin-bottom: 0%;   
 }
 #btn {
-    width: 4vw;
-    align-items: center;
+    width: 60px;
 }
 
 #contact p {
@@ -362,8 +365,10 @@ span {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--bck-footer);
-    border-top: 5px solid grey;
+    border-top: 5px solid var(--bord-footer-col);
+    height: 10vh;
 }
 
 /* id sur chaque icone pour pouvoir effectuer les demandes de modification taille et couleur et les animations */
@@ -394,17 +399,22 @@ footer {
     transform: translateX(30px);
 }
 
-@media (min-width:1920px) {
+@media screen and (min-width:1024px) {
     #titre {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 2em;
     }
-
+#edito {
+    
+    height: 60vh;
+}
     #edito p {
-        margin-bottom: 2%;
+        margin: 7% 2% 2% 2%;
+        font-size: 1.5em;
+        font-weight: 300;
     }
 
     /* problème de grande partie vide. Donc limitation height div 60 vh. Passage en flex row. Baisse à 40% width du p.
