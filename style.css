@@ -65,6 +65,7 @@ body {
 * {
     font-family: "raleway", sans-serif;
 }
+/* reset des marges */
 body {
     margin: 0;
 }
@@ -123,9 +124,6 @@ button  {
     border: none;
     background-color: var(--bck-btn-valid);
     border-radius: 10%;
-    margin-top: 4%;
-    margin-bottom: 6%;
-    margin-left: 2%;
     height: 2em;
 }
 
@@ -153,7 +151,7 @@ button:hover::before {
     transform: scaleX(1);
 }
 
-/* mise en flex pour gestion alignement photo et nom. Et placement "formation..." centré à part */
+/* mise en flex pour gestion alignement photo et nom. */
 #identite {
     display: flex;
     justify-content: space-around;
@@ -169,7 +167,7 @@ button:hover::before {
     margin-bottom: 2%;
 }
 
-/* mise en flex pour mise en forme conforme à la maquette + codes couleur titre, police et background en svg */
+/* mise en flex pour mise en forme conforme à la maquette + codes couleur */
 #edito {
     border-top: grey solid 5px;
     display: flex;
@@ -186,7 +184,7 @@ h2 {
     margin: 2% 0 2% 0;
 }
 
-/* mis à 75% pour obtenir l'effet bloc/article en mobile */
+/* section edito*/
 #edito p {
     width: 75%;
     margin-top: 5%;
@@ -194,14 +192,13 @@ h2 {
     padding-right: 10px;
 }
 
-/* section projet pour: ne pas intégrer le h2 dans le flex box.Et mise du background et de la border top. */
+/* section projets. */
 #projet {
     background-color: var(--bck-projet);
     border-top: var(--section-border-col) solid 5px;
 }
 
-/* création d'une div et mise en flex pour organiser la mise en forme des images et des textes. Puis ajour d'une id à chaque projet
-pour pouvoir individualiser les animations à venir */
+/* création article pour flex */
 
 article {
     display: flex;
@@ -217,14 +214,12 @@ article h4 {
     margin-bottom: 5%;
 }
 
-/* 40% width pour en avoir que 2 en largeur (1 img et 1 p fixé lui aussi à 40% width */
 article img {
     width: 40%;
     margin-bottom: 5%;
 }
 
-/* création classe pour l'effet radius inversé 1 image sur 2. Avec var uniquement pour le switch noir/blanc.
-Celle en orange va rester orange en dark ou light mode. Donc pas de var. Ajout filter grayscale 10 à 0 pour effet N&B/couleur */
+/* création classe pour l'effet radius inversé 1 image sur 2. Ajout filter grayscale 10 à 0 pour effet N&B/couleur */
 .radius1 {
     border: solid var(--img-projet-border) 3px;
     border-radius: 20% 0%;
@@ -272,10 +267,7 @@ article img:nth-child(5) {
 article img:nth-child(5):hover {
     transform: rotate(360deg);
 }
-article img:nth-child(6):hover {
-    transform: none;
-}
-
+/* donner taille au a, et img en obj fit pour régler probleme taille img */
 article a {
     width: 40%;
     height: 10%;
@@ -306,7 +298,7 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
 }
 
 
-/* organisation section passion */
+/*section passion */
 span {
     color: var(--span-col);
 }
@@ -329,7 +321,7 @@ span {
     height: 50%;
 }
 
-/* code couleur texte et background */
+/* section contact */
 #contact {
     background-image: var(--bck-contact);
     background-attachment: fixed;
@@ -399,6 +391,7 @@ footer {
     transform: translateX(30px);
 }
 
+/* responsive */
 @media screen and (min-width:1024px) {
     #titre {
         font-size: 2em;
