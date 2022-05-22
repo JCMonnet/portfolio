@@ -20,9 +20,7 @@
 </head>
 
 <body>
-    <!-- header découpé avec : bloc nav pour gestion en ligne. D'une div avec texte et photo pour pouvoir aligner les 2.
-    Et une div avec juste "en formation...." pour pour pouvoir la centrer seule, pour obtenir le texte arrivant un peu sous
-la photo. -->
+    <!-- header découpé avec : bloc nav / div nom+btn / div titre. -->
     <header>
         <nav>
             <ul id="navapart">
@@ -34,15 +32,14 @@ la photo. -->
         </nav>
         <div id="identite">
             <h1>Jean-Charles Monnet</h1>
-            <button id="lightmode">Light Mode</button>
+            <button id="lightmode" class="second">Light Mode</button>
         </div>
         <div id="titre">En formation developpeur web</div>
     </header>
 
-    <!-- création de la section edito, en y incluant le h2 et le p. En prévision d'une mise en flex.
-        Pour obtenir la mise en forme du paragraphe, comme sur la maquette -->
+    <!-- création de la section edito, pour ancre.-->
     <section id="edito">
-        <h2>Edito :</h2>
+        <h2>Edito:</h2>
         <p> Hello world, je m'appelle donc
             Jean-Charles ou JC pour ceux qui préferent. Après plus de vingt ans passés
             dans le domaine des essais automobiles.
@@ -65,51 +62,68 @@ la photo. -->
     <!-- section créée pour ancre nav -->
     <section id="projet">
         <h2>Projets :</h2>
-        
+        <!-- sous partie article en prevision du flex  -->
         <article>
             <img class="radius1" src="image/codehtml.WebP" alt="exemple de code">
             <h4>J'ai appris la structure d'une page html de base. Ainsi que les principales balises sémantiques</h4>
-        
-    
+
+
             <h4>Connaissance des balises courantes. Utilisation de flex-box et des selecteurs. Et d'animations simples.
             </h4>
-            <img class="radius2"  src="image/flexbox.WebP" alt="logo css">
-        
-        
+            <img class="radius2" src="image/flexbox.WebP" alt="logo css">
+
+
             <img class="radius1" src="image/js.WebP" alt="logo javascript">
             <h4>Connaissance des élements du dom. Déclaration de variables. Ajout d'eventlistener. Et fonctions simples
             </h4>
-        
-        
+
+
             <h4>Réalisation de mon cv en ligne et responsive</h4>
             <img class="radius2" id="imgprojet4" src="image/cv.WebP" alt="capture d'ecran de mon cv">
-        
-        
+
+
             <img class="radius1" id="imgprojet5" src="image/hulu.WebP" alt="image du site cloné">
             <h4>Reproduction identique d'un site existant. En collaboration à 3 personnes. Avec pull request sur github
             </h4>
-        
-        
+
+
             <h4>Integration à l'identique d'une maquette figma. Avec l'utilisation de grid.</h4>
-            <a href="https://jcmonnet.github.io/challenge2.philip/"><img class="radius2"
-                    src="image/figma.webp" alt="photo de la maquette"></a>
-                </article>
+            <a href="https://jcmonnet.github.io/challenge2.philip/"><img class="radius2" src="image/figma.webp"
+                    alt="photo de la maquette"></a>
+        </article>
     </section>
 
-
+    <!-- div pour modal, mise à part pour ne pas affecter les alignements -->
     <div id="modal1">
         <div id="modalcontent"><img src="image/cvbig.webp" alt="mon cv en grand"></div>
     </div>
+
     <!-- section pour fonctionnement ancre, et codes couleur -->
     <section id="passion">
-        <h2>Passion : <span>Le reggae, les concerts et les festivals</span></h2>
-        <div class="w3-content ">
-            <img class="mySlides" src="image/concert1.WebP" alt="concert paris">
-            <img class="mySlides" src="image/concert2.WebP" alt="festival reggae sunsplash">
-            <img class="mySlides" src="image/concert3.WebP" alt="festival rototom">
-            <img class="mySlides" src="image/concert4.WebP" alt="concert bob marley">
+        <h2>Passion :</h2>
+        <button id="hobby">Voir ce que j'aime?</button>
+        <!-- ajout div en raison du hidden/vivible -->
+        <div class="bloc cache">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=q7-qJXqMCWw&list=PLTW65Pa1TVwDq9RbFQ_vWTKvym2Ilw4n5">Musique</a></li>
+                <li><a id="liengalerie" href="#">Nature</a></li>
+                <li><a href="#">Cuisine</a></li>
+                <li><a href="#">Nage</a></li>
+            </ul>
         </div>
     </section>
+    <div id="conteneurgalerie">
+    <div id="galerie">
+        <h3>algues phosphorecentes</h3>
+        <img src="https://33mag.com/wp-content/uploads/2015/01/les-maldives-ou-surfer-des-vagues-bleu-fluorescentes-166231.jpg" alt="algues fluo">
+        <h3> grand canyon</h3>
+        <img src="https://www.cercledesvoyages.com/wp-content/webp-express/webp-images/uploads/2020/12/pm_8002_61_61076-xltpwt5jnb-3625.jpeg.webp" alt="grand canyon">
+        <h3>lac salé au chili</h3>
+        <img src="https://makila-production.s3.amazonaws.com/uploads/images/products/1456803154-3-7367/laguna_colorees_slideshow.jpg" alt="lac salé chili">
+        <h3>mer aux maldives</h3>
+        <img src="https://www.alibabuy.com/photos/library/1500/10314.jpg" alt="maldives">
+    </div>
+</div>
     <!-- section pour fonctionnement ancre  -->
     <section id="contact">
         <h2>contact :</h2>
