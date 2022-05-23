@@ -209,7 +209,8 @@ article img {
 
 /* animation des images section projet */
 /* effet mouvement simple */
-article img:nth-child(1):hover {
+
+article img:first-child:hover {
     transform: skew(10deg, 10deg);
 }
 
@@ -229,6 +230,10 @@ article img:nth-child(5) {
 
 article img:nth-child(5):hover {
     transform: rotate(360deg);
+}
+
+#chiant {
+    transform: none;
 }
 
 /* donner taille au a, et img en obj fit pour régler probleme taille img */
@@ -457,9 +462,9 @@ footer {
 }
 
 #galerie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: space-around;
     background-color: black;
     top: 0;
     left: 0;
@@ -469,6 +474,10 @@ footer {
     z-index: 1;
     color: white;
 }
+#galerie h3 {
+    text-align: center;
+}
+
 
 #galerie img {
     width: 40vw;
