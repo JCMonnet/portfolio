@@ -157,7 +157,7 @@ h2 {
 
 /* section projets. */
 #projet {
-    background-color: var(--bck-header);
+    background-color: var(--light-btn-col);
     border-top: var(--a-col) solid 5px;
 }
 
@@ -168,6 +168,10 @@ article {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color: var(--bck-header);
+    border: 1px solid var(--bord-footer-col);
 }
 
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
@@ -180,6 +184,7 @@ article h4 {
 article img {
     width: 40%;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 /* création classe pour l'effet radius inversé 1 image sur 2. Ajout filter grayscale 10 à 0 pour effet N&B/couleur */
@@ -232,20 +237,17 @@ article img:nth-child(5):hover {
     transform: rotate(360deg);
 }
 
-#chiant {
-    transform: none;
-}
-
 /* donner taille au a, et img en obj fit pour régler probleme taille img */
 article a {
     width: 40%;
     height: 10%;
+    margin-bottom: 5%;
 }
 
 article a img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;;
 }
 
 /* modal pour cv en grand format. Display none pour la cacher avant clic. Avec top,left 0 pour qu'elle "s'accroche en haut à gauche.
@@ -463,7 +465,7 @@ footer {
 
 #galerie {
     display: grid;
-    grid-template-columns: repeat(2,40%);
+    grid-template-columns: repeat(2, 40%);
     justify-content: space-around;
     background-color: black;
     top: 0;
@@ -473,10 +475,10 @@ footer {
     position: fixed;
     z-index: 1;
     color: white;
+    justify-items: center;
+    align-items: center;
 }
-#galerie h3 {
-    text-align: center;
-}
+
 
 
 #galerie img {
