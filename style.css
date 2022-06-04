@@ -168,14 +168,14 @@ article {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 90%;
     margin: auto;
     background-color: var(--bck-header);
     border: 1px solid var(--bord-footer-col);
 }
 
 /* width de 40% pour les p et img pour en avoir que 2 par "ligne". Et un margin bottom pour espacer le tout */
-article h4 {
+article h5 {
     color: var(--header-col);
     width: 40%;
     margin-bottom: 5%;
@@ -247,7 +247,7 @@ article a {
 article a img {
     width: 100%;
     height: 100%;
-    object-fit: cover;;
+    object-fit: cover;
 }
 
 /* modal pour cv en grand format. Display none pour la cacher avant clic. Avec top,left 0 pour qu'elle "s'accroche en haut à gauche.
@@ -269,12 +269,14 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
     overflow: scroll;
 }
 
+/* section passion */
 #passion {
     background-color: var(--light-btn-col);
-    border-top: solid var(--a-col) 5px;
+    border-top: solid grey 5px;
     height: 45vh;
 }
 
+/* menu passion caché */
 #hobby {
     display: block;
     margin: auto;
@@ -303,13 +305,14 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
     bottom: 0;
     right: 0;
     width: 30vw;
-    height: 20vh;
-    background-color: #333;
+    height: 19vh;
+    border: dashed var(--header-col) 1px;
+    background-color: var(--bck-header);
     transition: transform 1s ease-out;
 }
 
 .bloc.cache {
-    transform: translateX(-30vw);
+    transform: translateX(-301px);
 }
 
 .bloc ul {
@@ -328,9 +331,106 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
 .bloc a {
     display: block;
     padding: 1em 1.5em;
-    color: #fff;
+    color: var(--header-col);
     text-decoration: none;
     text-align: center;
+}
+
+/* modal paysages */
+#conteneurgalerie {
+    display: none;
+    background-color: black;
+}
+
+#galerie {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+#galerie img {
+    width: 40px;
+    height: 20px;
+}
+
+/* slider cuisine */
+#slider_container {
+    background-color: black;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+div #slider {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+div #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+    margin: 1% 0%;
+    border: grey solid 20px;
+    border-radius: 5px;
+}
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+div #slider figure {
+    position: relative;
+    width: 500%;
+    animation: 20s slidy infinite;
 }
 
 /* section contact */
@@ -410,7 +510,7 @@ footer {
 /* responsive */
 @media screen and (min-width:1024px) {
     #titre {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     p {
@@ -425,6 +525,10 @@ footer {
         margin: 7% 2% 2% 2%;
         font-size: 1.5em;
         font-weight: 300;
+    }
+    /* section projet */
+    article h5 {
+        font-size: 1.5em;
     }
 
     /* section contact: limitation height div 60 vh.*/
@@ -458,29 +562,7 @@ footer {
     }
 }
 
-#conteneurgalerie {
-    display: none;
-    background-color: black;
-}
-
-#galerie {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    justify-content: space-around;
-    background-color: black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    color: white;
-    justify-items: center;
-    align-items: center;
-}
-
-
-
+/* ajustement taille images galerie */
 #galerie img {
     width: 40vw;
     height: 30vh;

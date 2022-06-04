@@ -41,3 +41,16 @@ decor.addEventListener('click', hidden);
 function hidden () {
   decor.style.display='none';
 }
+
+// modal cuisine
+let cuisine=document.getElementById('liencuisine');
+let plats=document.getElementById('slider_container');
+cuisine.addEventListener('click', popup);
+function popup () {
+  plats.style.display='block';
+}
+
+plats.addEventListener('click', popdown);
+function popdown () {
+  plats.style.display='none';
+}
