@@ -312,7 +312,7 @@ Puis le 100% w,l pour qu'elle soit bien full screen. */
 }
 
 .bloc.cache {
-    transform: translateX(-301px);
+    transform: translateX(-31vw);
 }
 
 .bloc ul {
@@ -430,7 +430,7 @@ div#slider figure img {
 div #slider figure {
     position: relative;
     width: 500%;
-    animation: 20s slidy infinite;
+    animation: 10s slidy infinite;
 }
 
 /* section contact */
@@ -558,7 +558,7 @@ footer {
     }
 
     .bloc {
-        height: 23vh;
+        height: 18vh;
     }
 }
 
